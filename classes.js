@@ -1,8 +1,13 @@
 class Polygon {
   constructor(s) {
-    this.peri = s.reduce((a, c) => a + c);
+    this.side = s;
   }
   perimeter() {
-    return this.peri;
+    let p = 0;
+
+    for (let i = 0; i < this.side.length; i++) {
+      p += this.side[i];
+    }
+    return p;
   }
 }
