@@ -7,6 +7,8 @@ function sides(literals, ...expressions) {
     const s2 = (b-result)/4 
     var resArr = [s1,s2]
     
-    return resArr.sort();
+    return resArr.sort(function(a,b){
+        return b-a;
+    });
     
 }
